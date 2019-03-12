@@ -1,0 +1,436 @@
+/* Eric Meyer's Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+@font-face {
+	font-family: 'Code Pro Demo';
+	src: url('../fonts/Code-Pro-Demo.woff2') format('woff2'), url('../fonts/Code-Pro-Demo.woff') format('woff');
+}
+@font-face {
+	font-family: 'Droid Sans';
+	src: url('../fonts/Droid-Sans.woff2') format('woff2'), url('../fonts/Droid-Sans.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff');
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	font-size: 24px;
+	font-weight: 400;
+	font-style: italic;
+	line-height: 1.875;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Global Typography */
+*, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+}
+body {
+	font: 400 16px 'Noto Sans', sans-serif;
+	color: #666;
+}
+/* Global Headings */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Code Pro Demo';
+	line-height: 1.388;
+	color: #2c3034;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #0096c7;
+}
+h2 {
+	font-size: 36px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 32px;
+}
+h5 {
+	font-size: 28px;
+}
+h6 {
+	font-size: 18px;
+}
+/* General Text Formatting */
+p {
+	line-height: 1.75;
+	margin-bottom: 12px;
+}
+blockquote, cite, q, var, dfn {
+	font-style: italic;
+}
+small {
+	font-size: 85.71429%;
+	line-height: 1.75;
+}
+span {
+	display: inline-block;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* Global Link style */
+a {
+	color: #666;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	font-family: 'Code Pro Demo';
+}
+button {
+	background: transparent;
+	outline: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+/* Global Button Styles */
+.button {
+	border: none;
+	font-family: 'Code Pro Demo';
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #e99415;
+	color: #fff;
+	letter-spacing: 0.3px;
+	font-size: 18px;
+}
+.input {
+	border: none;
+	background: #222528;
+}
+*:hover, *:focus {
+	outline: none;
+	transition: 0.3s;
+}
+/* Global Sprite Icons */
+[class^="icon-"], [class*="icon-"] {
+	background: url(../images/sprite.png) 0 0 no-repeat;
+	display: inline-block;
+	width: 21px;
+	height: 23px;
+	vertical-align: text-top;
+	font-size: 0;
+}
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+#wrapper {
+
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.header {
+	background: #2c3034;
+	border-top: 2px solid #0096c8;
+	border-bottom: 1px solid #373c42;
+}
+.header .container {
+	padding: 27px 0 21px;
+}
+.header .container .logo {
+	float: left;
+	margin-right: 18px;
+	padding: 4px 0;
+}
+.header .container .navbar {
+	float: left;
+}
+.container .navbar li {
+	float: left;
+	padding: 0 7px;
+}
+.navbar > li > a {
+	font-size: 15px;
+	letter-spacing: 0.2px;
+	padding: 13px 11px 13px 11.5px;
+	color: #fff;
+}
+.navbar > li > a:not(.active):hover {
+	color: #0096c7;
+}
+.navbar li .button {
+	font-size: 16px;
+	background: #0096c7;
+	padding: 10px 31px 7px 30.5px;
+	margin-left: 11px;
+}
+.navbar li:last-child > a:hover {
+	background: #e99415;
+	color: #fff;
+}
+.header .navbar .active {
+	color: #0096c7;
+}
+.container .userbar {
+	float: right;
+}
+.userbar li {
+	float: left;
+	padding: 7px 2px 7px 21px;
+}
+.userbar a:hover .icon-profile {
+	background-position: -0px -23px;
+}
+.userbar .icon-cart {
+	background-position: -21px 0;
+}
+.userbar a:hover .icon-cart {
+	background-position: -21px -23px;
+}
+.footer {
+	background: #2c3034;
+	border-bottom: 6px solid #222528;
+	color: #fff;
+}
+.footer .beforefooter {
+	background: #0096c7;
+}
+.beforefooter .container {
+	padding: 46px 0 31px;
+}
+.container .getpara {
+	width: 770px;
+	float: left;
+	font: 24px/1.66 'Code Pro Demo';
+	letter-spacing: 0.65px;
+}
+.container .getlink {
+	float: right;
+	background: #fff;
+	color: #0096c7;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	padding: 15px 34px 12px 33px;
+	margin: 11px 1px 0 0;
+}
+.container .getlink:hover, .signupform .button:hover {
+	background: #e99415;
+	color: #fff;
+}
+.footer > .container {
+	padding: 51px 0 44px;
+}
+.footer .footbox {
+	width: 31.5%;
+	float: left;
+	margin-right: 31px;
+}
+.formbox h6 {
+	margin-bottom: 8px;
+	color: #fff;
+	padding: 0 1px;
+}
+.formbox .info {
+	font-size: 14px;
+	display: inline-block;
+	letter-spacing: 0.25px;
+	line-height: 1.35;
+	margin-bottom: 15px;
+	padding: 0 1px;
+}
+.signupform .namewrap {
+	margin-bottom: 11px;
+}
+.signupform .input {
+	height: 34px;
+	padding: 0 10px;
+}
+.signupform .fname {
+	margin-right: 11px;
+}
+.signupform .fname, .signupform .lname {
+	width: 48.5%;
+	float: left;
+}
+.signupform .emailwrap {
+	margin-bottom: 14px;
+}
+.signupform .email {
+	width: 100%;
+}
+.signupform .input::placeholder, .signupform .input {
+	color: #aaa;
+	font-size: 14px;
+	letter-spacing: 0.4px;
+}
+.signupform .button {
+	width: 100%;
+	font-size: 18px;
+	background: #0096c7;
+	color: #fff;
+	padding: 14px 0 10px;
+	letter-spacing: 0.4px;
+}
+.footer .container .helpful {
+	float: left;
+	margin-right: 32px;
+}
+.helpful h6 {
+	color: #fff;
+	padding: 0 2px;
+}
+.helpful .links li {
+	border-bottom: 1px dashed #414b55;
+}
+.links li a {
+	padding: 7px 2px 9px 2px;
+	color: #fff;
+	font: 400 14px 'Noto Sans';
+	text-transform: capitalize;
+}
+.links li a:hover {
+	color: #e99415;
+}
+.footer .container .companyinfo {
+	float: left;
+	width: 270px;
+	padding: 5px 0;
+}
+.companyinfo .logo {
+	margin-bottom: 11px;
+}
+.companyinfo span {
+	font-size: 13px;
+	letter-spacing: -0.15px;
+}
+.companyinfo .rights, .companyinfo .termbox {
+	margin-bottom: 9px;
+	display: block;
+}
+.rights a {
+	color: inherit;
+	font: inherit;
+}
+.companyinfo .sociallinks li {
+	float: left;
+	padding: 4px 16px 0 0;
+}
+.sociallinks .icon-fb {
+	width: 17px;
+	background-position: -42px 0;
+}
+.sociallinks a:hover .icon-fb {
+	background-position: -42px -23px;
+}
+.sociallinks .icon-twitter {
+	background-position: -63px 0;
+}
+.sociallinks a:hover .icon-twitter {
+	background-position: -63px -23px;
+}
+.sociallinks .icon-insta {
+	background-position: -84px 0;
+}
+.sociallinks a:hover .icon-insta {
+	background-position: -84px -23px;
+}
+.termbox span::after {
+	content: '|';
+	display: inline-block;
+	margin: 0 2px 0 7px;
+}
+.termbox span:last-child::after {
+	display: none;
+}
+.topline::before {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 4px;
+	top: 0;
+	left: 50%;
+	margin: -26px 0 0 -40px;
+	background: #0096c8;
+}
+.arrowright, .arrowleft, .topline 
+{
+	position:relative;
+}
+.arrowright::after, .arrowright::before{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 6px;
+	right: 1px;
+	border-right: 1px solid #0096c7;
+	border-bottom: 1px solid #0096c7;
+	transform: rotate(-45deg);
+}
+.arrowright::before {
+	right: 4px;
+}
+.arrowleft::after, .arrowleft::before
+{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 6px;
+	left:0;
+	border-left: 1px solid #666766;
+	border-bottom: 1px solid #666766;
+	transform: rotate(45deg);
+}
+.arrowleft::before
+{
+	left:3px;
+}

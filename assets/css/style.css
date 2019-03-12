@@ -1,0 +1,761 @@
+/*home page css start*/
+.banner {
+	height: 70vh;
+	min-height: 561px;
+	background: url("../images/banner.jpg") center/cover no-repeat;
+	border-width: 0 0 6px 0;
+	border-style: solid;
+	border-image: url("../images/border.jpg") 1;
+	position: relative;
+}
+.banner .bannercontent {
+	width: 836px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-49.8%,-52%);
+	position: absolute;
+	text-align: center;
+}
+.bannercontent h2 {
+	color: #fff;
+	line-height: 1.188;
+	letter-spacing: 1.5px;
+	font-size: 55px;
+	margin-bottom: 22px;
+}
+.buttonswrapper .button {
+	padding: 15px 0 12px;
+	width: 258px;
+	letter-spacing: 0.5px;
+}
+.buttonswrapper .get {
+	background: #0096c7;
+}
+.buttonswrapper .get:hover {
+	color: #0096c7;
+	background: #fff;
+}
+.buttonswrapper .play {
+	background: #e99415;
+}
+.buttonswrapper .play:hover {
+	color: #e99415;
+	background: #fff;
+}
+.buttonswrapper .play .icon-play {
+	width: 16px;
+	height: 17px;
+	background-position-x: -105px;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.play:hover .icon-play {
+	background-position-y: -23px;
+}
+.buttonswrapper .or {
+	text-transform: uppercase;
+	margin: 0 19.5px 0 18px;
+	color: #999;
+	font: bold 16px 'Code Pro Demo'
+}
+.buttonswrapper .or::after, .buttonswrapper .or::before {
+	content: '';
+	display: block;
+	margin: 0 auto 3px auto;
+	height: 13px;
+	width: 1px;
+	background: #999;
+}
+.homecontainer {
+	width: 1201px;
+	margin: 0 auto;
+	padding: 77px 0 55px 0;
+}
+.homecontainer .tabs {
+	text-align: center;
+	margin-bottom: 69px;
+}
+.homecontainer .logobutton {
+	margin-bottom: 31px;
+}
+.homecontainer .logobutton li {
+	display: inline-block;
+	padding-right: 52px;
+}
+.homecontainer .logobutton li:last-child {
+	padding: 0 0 0 30.5px
+}
+.logobutton .imgbtn {
+	position: relative;
+	height: 73px;
+}
+.logobutton .imgbtn img {
+	vertical-align: text-top;
+	opacity: 0.3;
+}
+.logobutton .active img, .logobutton .imgbtn:hover img {
+	opacity: 1;
+}
+.logobutton .imgbtn .middle {
+	margin-top: 6px;
+}
+.logobutton .active::before, .logobutton .active::after, .imgbtn:hover::before, .imgbtn:hover::after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin: 15px 0 0 -22px;
+	z-index: 2;
+	border-bottom: 17px solid #ccc;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
+.logobutton .active::after, .imgbtn:hover::after {
+	border-bottom-color: #f3f3f3;
+	margin-top: 17px;
+}
+.homecontainer .quotebox {
+	background: #f3f3f3;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(6,7,7,0.2);
+	padding: 44px 50px 44px 51px;
+	text-align: center;
+	position: relative;
+}
+.quotebox blockquote {
+	letter-spacing: 0.15px;
+	margin-bottom: 25px;
+}
+.quotebox .namebox {
+	color: #0096c8;
+	text-transform: uppercase;
+}
+.namebox span::after {
+	content: '|';
+	display: inline-block;
+	margin: 0 3px 0 9px;
+}
+.namebox span:last-child::after {
+	display: none;
+}
+.homecontainer .reviewcontainer {
+	width: 1074px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 26px 0;
+}
+.reviewcontainer h2 {
+	margin-bottom: 24px;
+	letter-spacing: 0.8px;
+}
+.reviewcontainer .reviewboxwrapper {
+	margin-bottom: 46px;
+	text-align: left;
+}
+.reviewboxwrapper .reviewbox {
+	width: 518px;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 3px rgba(6,7,7,0.2);
+	float: left;
+	padding: 26px 25px 20px 18px;
+	position: relative;
+	min-height: 223px;
+}
+.reviewboxwrapper .reviewbox::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #0096c8;
+}
+.reviewbox h3 {
+	font: 16px 'Noto Sans';
+	color: #0096c7;
+	margin-bottom: 3px;
+	letter-spacing: 0;
+}
+.reviewbox blockquote {
+	font-size: 18px;
+	line-height: 1.67;
+}
+.reviewboxwrapper .box2 {
+	float: right;
+}
+.reviewcontainer .see {
+	font-size: 18px;
+	padding: 15px 28.5px 12px;
+	letter-spacing: 0.5px;
+	color: #fff;
+}
+.reviewcontainer .see:hover {
+	background: #0096c7;
+}
+#wrapper .development {
+	background: url("../images/backgroundleft.jpg") left top no-repeat, #2c3034 url("../images/backgroundright.jpg") right top no-repeat;
+	margin-bottom: 236px;
+	padding: 89px 0 284px;
+	position: relative;
+}
+.development .developmentcontent {
+	width: 754px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 26px 0 25px;
+}
+.developmentcontent h2 {
+	color: #fff;
+	margin-bottom: 21px;
+	letter-spacing: 0.99px;
+	position: relative;
+}
+.developmentcontent p {
+	color: #b5b5b5;
+	margin-bottom: 29px;
+}
+.developmentcontent .learn {
+	background: #0096c7;
+	padding: 15px 27px 12px;
+	letter-spacing: 0.4px;
+}
+.developmentcontent .learn:hover {
+	background: #fff;
+	color: #0096c7;
+}
+.development .product {
+	position: absolute;
+	width: 834px;
+	height: 437px;
+	left: 50%;
+	top: 100%;
+	transform: translate(-51.8%, -59%);
+}
+#wrapper .videosection {
+	border-bottom: 1px solid #ddd;
+}
+.videosection .container {
+	text-align: center;
+	padding: 25px 0;
+	margin-bottom: 55px;
+}
+.videosection .container h2 {
+	margin-bottom: 39px;
+	letter-spacing: 0.9px;
+	position: relative;
+}
+.videosection .container .videoboxwrapper {
+	margin-bottom: 39px;
+}
+.videoboxwrapper .videobox {
+	width: 381px;
+	float: left;
+	position: relative;
+	margin-right: 28px;
+}
+.videoboxwrapper .box3 {
+	margin: 0;
+}
+.videoboxwrapper .videobox > h3 {
+	position: absolute;
+	width: 100%;
+	background: #0096c8;
+	color: white;
+	text-align: left;
+	padding: 13px 8px 9px 18px;
+}
+.videosection .container .view {
+	background: #e99415;
+	font-size: 18px;
+	padding: 15px 27px 12px;
+	letter-spacing: 0.4px;
+	color: #fff;
+}
+.videosection .container .view:hover {
+	background: #0096c8;
+}
+#wrapper .musicsection {
+	background: #010611 url("../images/music.jpg") center/contain no-repeat;
+	min-height: 519px;
+	height: 50vh;
+	border-top: 1px solid #dddddd;
+}
+.musicsection .container {
+	position: relative;
+	min-height: 100%;
+}
+.container .musicdetails {
+	width: 302px;
+	position: absolute;
+	top: 50%;
+	margin-top: -152px;
+}
+.musicdetails h5 {
+	color: #fff;
+	margin-bottom: 11px;
+}
+.musicdetails h5 span {
+	display: block;
+}
+.musicdetails h5 .used {
+
+	float: left;
+	padding: 10px 20px 5px 25px;
+	margin-bottom: 11px;
+	letter-spacing: 0.9px;
+	background: #0096c8;
+}
+.musicdetails h5 .name {
+	clear: left;
+}
+.musicdetails h5 .name strong {
+	float: left;
+	font-size: 48px;
+	padding: 12px 22px 1px 26px;
+	line-height: 1.25;
+	letter-spacing: 1.3px;
+	background: #0096c8;
+}
+.musicsection .songinfo {
+	background: #fff;
+	padding: 22px 20px 17px 25px;
+}
+.songinfo li {
+	float: left;
+	width: 100%;
+	padding: 3px 0 4px;
+}
+.songinfo li .infoleft {
+	float: left;
+	width: 36%;
+	margin-right: 2%;
+	color: #2c3034;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.songinfo li .inforight {
+	float: left;
+	width: 62%;
+	font-size: 18px;
+}
+/*home page css end*/
+/*about page css start*/
+#wrapper .section {
+	padding: 60px 0 80px;
+}
+.section .container .leftbox {
+	float: left;
+	width: 875px;
+}
+.leftbox h1 {
+	letter-spacing: 0px;
+	margin-bottom: 8px;
+}
+.leftbox .rightimage {
+	float: right;
+	margin: 6px 0 0 27px;
+}
+.leftbox .rightimage img {
+	display: block;
+}
+.leftbox p:nth-child(7) {
+	padding-right: 8px;
+}
+.section .container .rightbox {
+	float: right;
+	width: 271px;
+}
+.rightbox .latest {
+	background: #f6f6f6 url("../images/bottombackground.jpg") center bottom no-repeat;
+	padding: 23px 0 131px;
+	margin-top: 8px;
+	border-top: 3px solid #0096c7;
+	text-align: center;
+}
+.latest h3 {
+	color: #2c3034;
+	line-height: 1.25;
+}
+.latest h3 strong {
+	color: #0096c7;
+	display: block;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 0.7px;
+	margin-bottom: 4px;
+}
+.latest p {
+	padding: 0 25px;
+	font-family: 'Droid Sans';
+	line-height: 1.5;
+	margin-bottom: 4px;
+}
+.latest .see {
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.1px;
+	color: #0096c7;
+	padding-right: 12px;
+}
+.latest .see:hover {
+	color: #e99415;
+}
+.rightbox .verticalnav {
+	padding: 27px 0;
+}
+.verticalnav li {
+	border-bottom: 1px dashed #d9d9d9;
+}
+.verticalnav li a {
+	color: #666;
+	padding: 12px 15.5px 9px;
+	font-family: 'Droid Sans';
+	text-transform: capitalize;
+	position: relative;
+}
+.verticalnav li:first-child {
+	border-top: 1px dashed #d9d9d9;
+}
+.verticalnav li a::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin: -3px 0 0 -3px;
+	width: 10px;
+	height: 10px;
+	border-right: 3px solid #0096c7;
+	border-bottom: 3px solid #0096c7;
+	transform: rotate(-45deg);
+}
+.verticalnav li a:hover, .verticalnav li a:hover::before {
+	color: #e99415;
+	border-color: #e99415;
+}
+/*about page css end*/
+/*video page css start*/
+.videoswrapper .container {
+	padding: 59px 0 70px;
+	text-align: center;
+}
+.videoswrapper .container h1 {
+	margin-bottom: 6px;
+}
+.container .subheading {
+	font-size: 24px;
+	padding-right: 38px;
+	font-family: 'Myriad Pro';
+	margin-bottom: 36px;
+}
+.container .categories {
+	margin-bottom: 50px;
+	font-size: 0;
+}
+.categories li {
+	background: #ddd;
+	display: inline-block;
+	padding-right: 14px;
+}
+.categories li:first-child {
+	border-radius: 6px 0 0 6px;
+}
+.categories li:last-child {
+	border-radius: 0px 6px 6px 0;
+	padding: 0 0px 0 4px;
+}
+.categories li .vidlink {
+	font-size: 16px;
+	padding: 9.5px 27px 7.5px 29px;
+	color: #0096c7;
+	border-radius: 6px;
+	border-left: 3px solid #ddd;
+	border-right: 3px solid #ddd;
+}
+.categories li:first-child .vidlink {
+
+	border-left: 0;
+}
+.categories li:last-child .vidlink {
+	padding-right: 32px;
+	border-right: 0;
+}
+.categories li a:hover, .categories li .active {
+	background: #0096c7;
+	color: #fff;
+	border-color: #fff;
+}
+.container .videos .row {
+	text-align: left;
+}
+.videos .row {
+	margin-bottom: 43px;
+}
+.videos .row .videolink {
+	float: left;
+	width: 48.3%;
+	padding: 10px 9px 8px 9px;
+	background: #f6f6f6;
+	box-shadow: 0 3px #0096c7;
+}
+.videos .row .secondlink {
+	float: right;
+}
+.row .videoimage {
+	margin-bottom: 14px;
+}
+.row .videoimage img {
+	display: block;
+}
+.row .videolink h3 {
+	font: bold 16px 'Droid Sans';
+	text-transform: none;
+	letter-spacing: 0.55px;
+	padding-left: 1px;
+	margin-bottom: 5px;
+}
+.videolink .categorybox {
+	color: #999;
+	font-family: 'Code Pro Demo';
+}
+.categorybox span::after {
+	content: '|';
+	margin: 0 0 0 6px;
+	font-size: 18px;
+}
+.categorybox a {
+	color: #0096c7;
+	font-weight: bold;
+}
+.categorybox a:hover {
+	color: #e99415;
+}
+.secondlink .categorybox strong {
+	margin-left: 3px;
+}
+.videos .sharecontainer {
+	background: #2c3034;
+	padding: 32px 34px 31px 37px;
+	margin-bottom: 46px;
+	text-align: left;
+}
+.sharecontainer p {
+	color: #fff;
+	float: left;
+	font: 24px/1.5 'Droid Sans';
+	width: 50%;
+}
+.sharecontainer .hashtag {
+	float: right;
+	color: #0096c7;
+	font: bold 40px 'Code Pro Demo';
+	width: 44.2%;
+	padding: 13px 5px 6px 46px;
+	letter-spacing: 1.1px;
+	margin-top: 2px;
+	background: rgba(255,255,255,0.05);
+	border: 1px solid #4f5459;
+}
+/*video page css end*/
+/*shop page css start*/
+.section {
+	padding: 68px 0 85px;
+}
+.section .container .productwrapper {
+	margin-bottom: 38px;
+}
+.productwrapper .productimg {
+	float: left;
+	width: 688px;
+	text-align: center;
+}
+.productimg .imagecontainer {
+	margin-bottom: 1px;
+}
+.pagination > span {
+	font-size: 0;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #999;
+	margin-right: 4.5px;
+}
+.pagination > span:last-child {
+	margin: 0;
+}
+.pagination .active {
+	background: #0096c7;
+}
+.pagination > span:not(.active):hover {
+	background: #e99415;
+}
+.productwrapper .productdetails {
+	float: right;
+	width: 465px;
+	padding: 21px 0;
+}
+.productdetails h1 {
+	letter-spacing: 1px;
+	line-height: 1.25;
+}
+.productdetails .amount {
+	color: #2c3034;
+	font: bold 32px 'Myriad Pro';
+	display: block;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+.productdetails .ratings {
+	display: block;
+	margin-bottom: 18px;
+}
+.productdetails .number {
+	font-size: 13px;
+	border-bottom: 1px solid #666;
+	padding-top: 3px;
+	margin-left: 3px;
+}
+.ratings .icon-star {
+	width: 16.8px;
+	height: 21px;
+	background-position: -121px 0;
+	vertical-align: text-bottom;
+}
+.productdetails .detaillist {
+	padding-left: 36px;
+	margin-bottom: 22px;
+}
+.detaillist li {
+	line-height: 1.75;
+	position: relative;
+}
+.detaillist li::before {
+	content: '';
+	width: 4px;
+	height: 4px;
+	position: absolute;
+	border-radius: 50%;
+	background: #666;
+	top: 12px;
+	left: 0;
+	margin: 0 0 0 -10px;
+}
+.productdetails .button {
+	background: #0096c7;
+	padding: 16px 40px 13px 43px;
+	margin-left: 1px;
+}
+.productdetails .button:hover {
+	background: #e99415;
+}
+.reviewrapper h2 {
+	margin-bottom: 13px;
+	font-size: 32px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding-left: 2px;
+}
+.reviewrapper .statsbox {
+	margin-bottom: 26px;
+}
+.statsbox .average {
+	font-size: 18px;
+	padding: 8px 0;
+	margin-right: 8px;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+}
+.statsbox .icon-starbig {
+	width: 19px;
+	background-position: -142px 0;
+}
+.statsbox .leave {
+	float: right;
+	font-size: 16px;
+	padding: 10px 19px 7px 19px;
+}
+.statsbox .leave:hover {
+	background: #0096c7;
+}
+.reviewrapper .paginatorbox {
+	padding: 7px 43px 8px 10px;
+	background: #f6f6f6;
+	border-bottom: #dedddd;
+	font-size: 14px;
+}
+.paginatorbox .reviewcount {
+	letter-spacing: 0.3px;
+	float: left;
+}
+.paginatorbox .paginator {
+	float: right;
+}
+.paginator li {
+	display: inline-block;
+}
+.paginator li a {
+	font-family: 'Myriad Pro';
+	text-transform: none;
+	color: #0096c7;
+	margin-right: 8.5px;
+	padding: 0;
+}
+.paginator .previous {
+	color: #666766;
+	padding-left: 9px;
+}
+.paginator .active {
+	color: #666766;
+}
+.paginator .next {
+	margin: 0;
+	padding-right: 10px;
+}
+.reviewrapper .reviewboxes {
+	margin-bottom: 7px;
+}
+.reviewboxes li {
+	border-bottom: 1px dashed #dedddd;
+	padding: 28px 0 18px 0;
+}
+.reviewboxes li:last-child {
+	padding: 37px 0 18px 0;
+	border-bottom: none;
+}
+.reviewboxes .reviewrating {
+	margin-bottom: 5px;
+}
+.reviewboxes .reviewrating .leftstars {
+	float: left;
+	padding-top: 5px;
+	margin-right: 4px;
+}
+.reviewrating .icon-stars {
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin-right: 4px;
+	background-position: -162px 0;
+}
+.reviewboxes .reviewrating h4 {
+	float: left;
+	font: 700 16px 'Noto Sans';
+	color: #0096c7;
+	text-transform: none;
+	letter-spacing: 0px;
+}
+.reviewboxes li .info {
+	color: #666766;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	margin-bottom: 22px;
+	text-transform: uppercase;
+}
+.reviewboxes li p {
+	font-style: italic;
+	color: #666766;
+	padding: 0 65px 0 45px;
+	letter-spacing: -0.13px;
+}
+/*shop page css end*/
